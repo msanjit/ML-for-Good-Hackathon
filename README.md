@@ -3,10 +3,27 @@
   - **Name**: VCare(or Team 20)
   - **Team Members**:  Sanjit Mehta, Naveena Chandwani, Rohith Rathod
 
+# Idea -
+### FocusGroups data captures coversations wherein different questions/answers about pre-pandemic, pandemic, post-pandemic/return-to-school/work and group-specific situations have been discussed.  
+- The 4 groups are-
+1] Gaming_Group
+2] Social_Group
+3] LowPIU_Group
+4] Media_Group
+
+### Our work involves performing various tasks to gain insights and derive meaning from these conversations in order to help the survey participants better and also to be able to understand the pattern among similar groups in the future
+
+### The NLP tasks performed are as follows-
+#### 1] NLP Pre-processing pipeline
+#### 2] Clustering and Sentiment analysis 
+#### 3] Conversational summarization
+#### 4] Emotion analysis
+
 # Preprocessing of Data
 
 - ### Information extraction: 
     By going through the conversation between Moderator and Parents from the given word document on Focus groups, we manually extracted questions and answers in the form of structure data(CSV file). Extracted CSV Data - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data_preparation)
+	Later rules can be built to detect patterns based on length of the questions asked by the moderator, regex for  parent number, etc. and creation of such a structured file can be automated
     - ### Extracted Data Dictionary:
     
         | Column_name | Data_type   | Description |
@@ -28,6 +45,8 @@
     - Remove stop word
     - Lemmatization
     - Remove Extra Spaces
+
+
 # Sentiment Analysis
 
 - ### Background
@@ -47,3 +66,47 @@
 - ### Resource
 	- Blog - [Click Here](https://towardsdatascience.com/unsupervised-sentiment-analysis-a38bf1906483)
 	- Github link - [Click Here](https://github.com/rafaljanwojcik/Unsupervised-Sentiment-Analysis)
+	
+
+# Conversational summarization
+
+- ### End goal
+	- Forming a sub-convo for each question asked by moderator and the various answers given by the parents.
+	- Running a summarizer to capture the info from each such sub-convo.
+	- This will be very useful to filter out the unnecessary text at the beginning and end of each conversation and to focus on the important text for analysing the survey responses.	
+- ### Input data	
+	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data_preparation/focus_groups_convos.csv)
+- ### Code Details
+    - Both Abstractive and Extractive Summarization have been tried
+	- Abstractive summarization using Transformer's T5 model
+	- Extractive Implementation includes aggregating data at a question level and running through 3 pre-trained models-
+	BERT, XLNET, GPT2
+	- Based on preliminary runs and results for Extractive Summarization, individual models gave average results and each missed important aspects.
+	- All of them had some common content. So the idea here is to use an Ensemble model like technique to combine the results from each of these individual 'weak' models
+	and to aggregate them to in such a way that more variation is captured
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/T5_for_summarization_naveenac.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/pre_trained_models_summaries_for_sub_convos.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/BERT_GPT2_XLNET_for_summarization_naveenac.ipynb)
+- ### Ouput data	
+	- Output CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/outputs/)
+- ### Resource
+	- https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.SummarizationPipeline	
+
+
+# Emotion Analysis
+
+- ### End goal
+	- Emotion analysis for text (per group per question per parent's response)
+	- This can then be aggregated-
+		1] at a parent level - to obtain the various emotions felt by each parent
+		2] at a question level - to obtain the various emotions experienced by parents for each question asked by the moderator
+		3] at a group level - by combining all the emotions across all questions
+	- Emotion labels-
+	['serenity', 'joy', 'disgust', 'anxious', 'optimism', 'vigilance', 'sad', 'fear']
+	Thus, this will help in capturing a wide range of emotions and varying degrees of an emotion (based on Plutchik's wheel of emotion)
+- ### Input data	
+	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data_preparation/focus_groups_convos_emotion_analysis.csv)
+	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data_preparation/focus_groups_convos_emotion_analysis_test.csv)
+- ### Code Details
+	- Fine-tuning pre-trained BERT for Sequence Classification model using Torch and Trainer Class
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/emotions_analysis.ipynb) 
