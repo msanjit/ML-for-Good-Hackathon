@@ -1,5 +1,5 @@
 # ML-for-Good-Hackathon
-# Team Details: 
+# Team Details 
   - Name: VCare(or Team 20)
   - Team Members:  Sanjit Mehta, Naveena Chandwani, Rohith Rathod
 
