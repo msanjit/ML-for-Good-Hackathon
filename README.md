@@ -20,7 +20,7 @@
         | parent_answer      | Text       |Answer given by the Parents
 
 - ### Normalizing/Cleaning Data: 
-    Following are the Data preprocessing methods followed. Code - [link](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/Data_preprocessing.ipynb) 
+    Following methods are used for Data preprocessing. Code - [link](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/Data_preprocessing.ipynb) 
     - Expand contraction
     - Case Handling
     - Remove punctuations
