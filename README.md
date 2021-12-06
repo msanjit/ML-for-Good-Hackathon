@@ -3,8 +3,18 @@
   - **Name**: VCare(or Team 20)
   - **Team Members**:  Sanjit Mehta, Naveena Chandwani, Rohith Rathod
 
-# Idea -
-### FocusGroups data captures coversations wherein different questions/answers about pre-pandemic, pandemic, post-pandemic/return-to-school/work and group-specific situations have been discussed.  
+### The NLP tasks performed are as follows-
+#### 1] NLP Pre-processing pipeline
+#### 2] Clustering and Sentiment analysis on Unstructured data
+#### 3] Conversational summarization
+#### 4] Emotion analysis
+#### 5] Agglomerative and K-Means Clustering on Structured data
+#### 6] Identifying outliers in data and feature creation followed by Predictive analytics on Structured data
+
+
+# Ideas-
+## 1] FocusGroups data related work -
+### This data captures conversations wherein different questions/answers about pre-pandemic, pandemic, post-pandemic/return-to-school/work and group-specific situations have been discussed.  
 - The 4 groups are-
 1] Gaming_Group
 2] Social_Group
@@ -13,11 +23,6 @@
 
 ### Our work involves performing various tasks to gain insights and derive meaning from these conversations in order to help the survey participants better and also to be able to understand the pattern among similar groups in the future
 
-### The NLP tasks performed are as follows-
-#### 1] NLP Pre-processing pipeline
-#### 2] Clustering and Sentiment analysis 
-#### 3] Conversational summarization
-#### 4] Emotion analysis
 
 # Preprocessing of Data
 
@@ -109,4 +114,15 @@
 	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data_preparation/focus_groups_convos_emotion_analysis_test.csv)
 - ### Code Details
 	- Fine-tuning pre-trained BERT for Sequence Classification model using Torch and Trainer Class
-	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/emotions_analysis.ipynb) 
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/emotions_analysis.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-       
+	Hackathon/blob/main/vcare/notebooks/emotions_analysis_with_4_labels.ipynb)
+
+
+## 2] ProlificAcademic data related work -
+- ### This section uses Structured data based on surveys conducted on adults and parents during different periods of the pandemic such as April 2020, May 2020, November 2020, 	  April 2021. 
+- ### 1] Agglomerative and K-Means Clustering were performed to identify common groups of individuals and correlations
+- ### 2] Identifying outliers in data and feature creation followed by predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
+- ### Code Details	
+	- Jupyter notebook link for Python source code - 
+	- [Click Here](https://github.com/msanjit/ML-for-GoodHackathon/blob/main/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
