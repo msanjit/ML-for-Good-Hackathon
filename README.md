@@ -124,5 +124,4 @@
 - ### 1] Agglomerative and K-Means Clustering were performed to identify common groups of individuals and correlations
 - ### 2] Identifying outliers in data and feature creation followed by predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
 - ### Code Details	
-	- Jupyter notebook link for Python source code - 
-	- [Click Here](https://github.com/msanjit/ML-for-GoodHackathon/blob/main/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-    Hackathon/blob/master/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
