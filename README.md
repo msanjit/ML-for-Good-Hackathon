@@ -115,8 +115,7 @@
 - ### Code Details
 	- Fine-tuning pre-trained BERT for Sequence Classification model using Torch and Trainer Class
 	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/emotions_analysis.ipynb)
-	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-       
-	Hackathon/blob/main/vcare/notebooks/emotions_analysis_with_4_labels.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/main/vcare/notebooks/emotions_analysis_test.ipynb)
 
 
 ## 2] ProlificAcademic data related work -
@@ -124,4 +123,4 @@
 - ### 1] Agglomerative and K-Means Clustering were performed to identify common groups of individuals and correlations
 - ### 2] Identifying outliers in data and feature creation followed by predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
 - ### Code Details	
-	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-    Hackathon/blob/master/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
+	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/master/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
