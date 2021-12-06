@@ -129,6 +129,6 @@
 - ### Identifying outliers in data and feature creation 
 - ### Predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
 - - ### Input data	
-	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data/ProlificAcademic)
+	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/master/Data/ProlificAcademic)
 - ### Code Details	
 	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/master/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
