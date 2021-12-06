@@ -120,7 +120,15 @@
 
 ## 2] ProlificAcademic data related work -
 - ### This section uses Structured data based on surveys conducted on adults and parents during different periods of the pandemic such as April 2020, May 2020, November 2020, 	  April 2021. 
-- ### 1] Agglomerative and K-Means Clustering were performed to identify common groups of individuals and correlations
-- ### 2] Identifying outliers in data and feature creation followed by predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
+
+# Agglomerative and K-Means Clustering
+- ### This was performed to identify common groups of individuals and correlations
+
+# Predictive Analytics-
+- ### Unifying the various datasets
+- ### Identifying outliers in data and feature creation 
+- ### Predictive analytics using GradientBoosting to look out for markers for more worry, role of substance abuse, etc.
+- - ### Input data	
+	- Input CSV file - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/tree/main/vcare/data/ProlificAcademic)
 - ### Code Details	
 	- Jupyter notebook link for Python source code - [Click Here](https://github.com/msanjit/ML-for-Good-Hackathon/blob/master/vcare/notebooks/crisis_prolific_analysis_v1.ipynb)
